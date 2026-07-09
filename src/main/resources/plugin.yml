@@ -1,0 +1,18 @@
+name: Scout
+version: '1.0.0'
+main: dev.portfolio.scout.Scout
+api-version: '1.21'
+description: Сканер приватов WorldGuard
+depend: [WorldEdit, WorldGuard]
+commands:
+  scout:
+    description: Админ-команда сканера
+    usage: /scout reload
+    permission: scout.admin
+permissions:
+  scout.admin:
+    description: Перезагрузка Scout
+    default: op
+  scout.use:
+    description: Ставить и использовать сканер
+    default: true
